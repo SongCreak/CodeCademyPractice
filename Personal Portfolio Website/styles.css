@@ -1,0 +1,17 @@
+.a {
+    background-color: yellow;
+    position: sticky;   
+    top: 0;
+}
+
+main, section {
+    height: 100vh;
+}
+
+body {
+   height: 400vh;
+}
+li {
+    position: fixed;
+    top: 0;
+}

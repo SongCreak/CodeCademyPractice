@@ -1,0 +1,75 @@
+@font-face {
+  src: url(Fonts/Airplane.ttf);
+  font-family: airplane;
+}
+
+@font-face {
+  src: url(Fonts/amarurgt.ttf);
+  font-family: amarurgt;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+.slide-container {
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    display: flex;
+  }
+
+.slide-container::-webkit-scrollbar {
+    display: none;
+}
+.slide {
+    scroll-snap-align: start;
+    min-width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background: linear-gradient(#1095c1 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+    transition: .8s, background-position 0s;
+  }
+
+ul {
+    width: 100vw;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    justify-content: space-evenly;
+  }
+
+li {
+    width: 20vw;
+    transition: all 0.1s;
+    display: block;
+}
+
+.li-active {
+  border: 1px black solid;
+  
+}
+
+.slide-active {
+  --p: 100%;
+  color: #fff;
+}
+
+div {
+  border: 1px solid black;
+}
+
+h2 {
+  font-family: amarurgt;
+}
+
+section {
+  display: block;
+}
